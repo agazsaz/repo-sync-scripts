@@ -22,5 +22,5 @@
 
 ## 🚀 Запуск на Windows
 ```powershell
-cd C:\Projects
+cd C:\users\agaszaz\projects
 .\sync-repos.ps1
