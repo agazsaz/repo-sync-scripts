@@ -44,7 +44,7 @@ main() {
     if git remote -v | grep -q .; then
         git pull
         if [ $? -ne 0 ]; then
-            echo -e "${RED}Ошибка при выполнении git pull!${NC}"
+            echo -e "${RED}Ошибка при выполнении git pull!${NC}"2
             exit 1
         fi
     else
