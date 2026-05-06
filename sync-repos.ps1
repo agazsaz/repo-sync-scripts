@@ -5,7 +5,7 @@
 .DESCRIPTION
     Выполняет pull из удаленного репозитория и копирует содержимое в другой локальный репозиторий
 .NOTES
-    Автор: Евгений
+    Автор: Иван
     Версия: 1.0
 #>
 
@@ -63,8 +63,8 @@ function Copy-RepositoryContent {
 function Start-Sync {
     Write-Host "=== Синхронизация репозиториев ===" -ForegroundColor Cyan
     
-    $sourceRepo = "C:\Projects\source-repo"
-    $destRepo = "C:\Projects\destination-repo"
+    $sourceRepo = "C:\Projects\repo-sync-scripts"
+    $destRepo = "C:\Projects\MFUA.REP"
     
     if (-not (Test-PathSafe $sourceRepo)) { return }
     if (-not (Test-PathSafe $destRepo)) { return }
